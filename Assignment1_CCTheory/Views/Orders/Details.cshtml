@@ -1,0 +1,50 @@
+﻿@model Assignment1_CCTheory.Models.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CusName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CusName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Laptop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Laptop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LCD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LCD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.OrdId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
